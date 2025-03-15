@@ -28,8 +28,8 @@ export function formattingSubscription() {
 			provideDocumentFormattingEdits(document, options, token) {
 				const text = document.getText();
 
-				const indent_style = options.insertSpaces ? "space" : "tab";
-				const indent_width = options.tabSize;
+				const indent_style = "tab";
+				const indent_width = 4;
 
 				script_logger.log(
 					document.languageId,
@@ -68,8 +68,8 @@ export function formattingSubscription() {
 			provideDocumentFormattingEdits(document, options, token) {
 				const text = document.getText();
 
-				const indent_style = options.insertSpaces ? "space" : "tab";
-				const indent_width = options.tabSize;
+				const indent_style = "tab";
+				const indent_width = 4;
 
 				style_logger.log(
 					document.languageId,
@@ -120,8 +120,8 @@ export function formattingSubscription() {
 			provideDocumentFormattingEdits(document, options, token) {
 				const text = document.getText();
 
-				const indent_style = options.insertSpaces ? "space" : "tab";
-				const indent_width = options.tabSize;
+				const indent_style = "tab";
+				const indent_width = 4;
 
 				markup_logger.log(
 					document.languageId,
@@ -160,8 +160,8 @@ export function formattingSubscription() {
 			provideDocumentFormattingEdits(document, options, token) {
 				const text = document.getText();
 
-				const indent_style = options.insertSpaces ? "space" : "tab";
-				const indent_width = options.tabSize;
+				const indent_style = "tab";
+				const indent_width = 4;
 
 				json_logger.log(
 					document.languageId,

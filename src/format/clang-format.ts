@@ -43,12 +43,10 @@ export function formattingSubscription() {
 			): vscode.ProviderResult<vscode.TextEdit[]> {
 				const text = document.getText();
 
-				const IndentWidth = options.tabSize;
-				const TabWidth = options.tabSize;
+				const IndentWidth = 4;
+				const TabWidth = 4;
 
-				const UseTab = options.insertSpaces
-					? "Never"
-					: "ForIndentation";
+				const UseTab = "Always";
 
 				const style = JSON.stringify({
 					...defaultConfig(document.languageId),

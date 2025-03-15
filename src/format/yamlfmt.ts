@@ -19,8 +19,8 @@ export function formattingSubscription() {
 			provideDocumentFormattingEdits(document, options, token) {
 				const text = document.getText();
 
-				const indent_style = options.insertSpaces ? "space" : "tab";
-				const indent_width = options.tabSize;
+				const indent_style = "tab";
+				const indent_width = 4;
 
 				logger.info(
 					document.languageId,

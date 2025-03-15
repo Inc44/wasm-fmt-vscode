@@ -23,9 +23,9 @@
 	],
 	"browser": "./out/extension.js",
 	"scripts": {
-		"vscode:prepublish": "./esbuild.mjs --minify",
-		"compile": "./esbuild.mjs",
-		"watch": "./esbuild.mjs --watch"
+		"vscode:prepublish": "node esbuild.mjs --minify",
+		"compile": "node esbuild.mjs",
+		"watch": "node esbuild.mjs --watch"
 	},
 	"devDependencies": {
 		"@types/node": "^22.10.1",
